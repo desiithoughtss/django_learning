@@ -62,3 +62,8 @@ def onlyID(request, id):
     
 def home_page(request):
     return HttpResponse("This is the homepage")
+
+def template_home(request):
+    name = "akshit"
+    # return render(request, "posts/home.html", {"name": name, "list":["a"]})
+    return render(request, "posts/home.html", {"posts": posts})

@@ -23,6 +23,7 @@ urlpatterns = [
     path("", views.home_page),
     path("posts/", include("posts.urls")),
     path("google", views.google),
-    path("<int:id>/", views.onlyID)
+    path("<int:id>/", views.onlyID),
     # path('post/helloworld/', views.hello_world )
+    path("template_home/", views.template_home)
 ]
