@@ -28,3 +28,7 @@ def redirecting(request):
 
 def newRedirect(request, id):
     return HttpResponseRedirect(f"/dynamicUrl/{id}")
+
+
+def htmlrender(request):
+    return render(request, "app1/main.html", {"name": "akshit"})

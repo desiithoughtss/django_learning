@@ -23,6 +23,7 @@ urlpatterns = [
     path("hello/", views.hello, name="hello"),
     path("returnHtml/", views.returnHtml, name="returnHtml" ),
     path("dynamicUrl/<int:id>", views.dynamicUrl, name="dynamicUrl"),
+    path("htmlrender/", views.htmlrender),
     # 
     path("include/", include("app1.urls"))
 ]
